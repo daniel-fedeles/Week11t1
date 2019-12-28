@@ -36,9 +36,9 @@ namespace GenericCalc.Tests
         }
 
         [Theory]
-        [InlineData("3", "7", "10")]
+        [InlineData("3", "7")]
         [Trait("Category", "Add")]
-        public void TestStrAdd(string a, string b, string c)
+        public void TestStrAdd(string a, string b)
         {
             Assert.Throws<NotANumberException>(() => strGenCalc.Add(a, b));
 

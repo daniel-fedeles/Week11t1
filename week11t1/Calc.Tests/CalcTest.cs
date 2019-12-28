@@ -81,9 +81,9 @@ namespace Calc.Tests
         }
 
         [Theory]
-        [InlineData(3, 0, 3)]
+        [InlineData(3, 0)]
         [Trait("Category", "DevideByZero")]
-        public void DevideByZero(decimal a, decimal b, decimal c)
+        public void DevideByZero(decimal a, decimal b)
         {
 
             Assert.Throws<DivideByZeroException>(() => calcClass.Div(a, b));
